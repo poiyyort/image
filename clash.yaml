@@ -113,7 +113,9 @@ dns:
   # The answers from fallback servers are used when the GEOIP country
   # is not `CN`.
   fallback:
-    - tcp://1.1.1.1
+    - tls://1.1.1.1:853
+    - tls://1.0.0.1:853
+    - 101.6.6.6:5353
 
   # If IP addresses resolved with servers in `nameservers` are in the specified
   # subnets below, they are considered invalid and results from `fallback`
@@ -134,6 +136,11 @@ dns:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
+
+fallback:
+  - tls://1.1.1.1:853
+  - tls://1.0.0.1:853
+  - 101.6.6.6:5353
 
 proxies:
   # Shadowsocks
