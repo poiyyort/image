@@ -507,21 +507,40 @@ rule-providers:
     url: 'https://raw.fastgit.org/Loyalsoldier/clash-rules/release/applications.txt'
     path: ./ruleset/applications.yaml
     interval: 86400
+# BLACK LIST MODE
+# rules:
+#   - RULE-SET,applications,DIRECT
+#   - DOMAIN,clash.razord.top,DIRECT
+#   - DOMAIN,yacd.haishan.me,DIRECT
+#   - RULE-SET,private,DIRECT
+#   - RULE-SET,reject,REJECT
+#   - RULE-SET,tld-not-cn,PROXY
+#   - RULE-SET,icloud,PROXY
+#   - RULE-SET,apple,PROXY
+#   - RULE-SET,google,PROXY
+#   - RULE-SET,gfw,PROXY
+#   - RULE-SET,greatfire,PROXY
+#   - RULE-SET,telegramcidr,PROXY
+#   - MATCH,PROXY
 
+# WHITE LIST MODE
 rules:
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
-  - RULE-SET,tld-not-cn,PROXY
   - RULE-SET,icloud,PROXY
   - RULE-SET,apple,PROXY
   - RULE-SET,google,PROXY
-  - RULE-SET,gfw,PROXY
-  - RULE-SET,greatfire,PROXY
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
   - RULE-SET,telegramcidr,PROXY
-  - MATCH,DIRECT
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
 
 # 规则
 # rules:
