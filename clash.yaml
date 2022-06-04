@@ -55,7 +55,7 @@ external-ui: folder
 # secret: ""
 
 # Outbound interface name
-interface-name: en0
+# interface-name: en0
 
 profile:
   # store the `select` results in $HOME/.cache
@@ -205,7 +205,6 @@ proxies:
       path: /flex
       max-early-data: 2048
       early-data-header-name: Sec-WebSocket-Protocol
-    interface-name: en1
     # ws-headers:
     #   Host: v2ray.com
 
