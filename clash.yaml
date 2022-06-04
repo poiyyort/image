@@ -56,6 +56,7 @@ external-ui: folder
 
 # Outbound interface name
 # interface-name: en0
+# interface-name: Local Area Connection 10
 
 profile:
   # store the `select` results in $HOME/.cache
@@ -103,8 +104,8 @@ dns:
   # involved. Clash answers the DNS question with the first result gathered.
   nameserver:
     - https://dns.adguard.com/dns-query
-    - 114.114.114.114 # default value
-    - 8.8.8.8 # default value
+    # - 114.114.114.114 # default value
+    # - 8.8.8.8 # default value
     - tls://dns.rubyfish.cn:853 # DNS over TLS
     # - https://1.1.1.1/dns-query # DNS over HTTPS
 
