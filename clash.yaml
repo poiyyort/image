@@ -205,6 +205,7 @@ proxies:
       path: /flex
       max-early-data: 2048
       early-data-header-name: Sec-WebSocket-Protocol
+    interface-name: en1
     # ws-headers:
     #   Host: v2ray.com
 
