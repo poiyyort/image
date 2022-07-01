@@ -75,7 +75,7 @@ hosts:
   # '*.clash.dev': 127.0.0.1
   # '.dev': 127.0.0.1
   # 'alpha.clash.dev': '::1'
-  'elonsms.xyz': 104.18.250.125
+  'elonsms.xyz': 162.159.130.123
 
 # DNS server settings
 # This section is optional. When not present, the DNS server will be disabled.
