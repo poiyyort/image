@@ -75,7 +75,7 @@ hosts:
   # '*.clash.dev': 127.0.0.1
   # '.dev': 127.0.0.1
   # 'alpha.clash.dev': '::1'
-  'elonsms.xyz': 162.159.130.123
+  # 'elonsms.xyz': 162.159.130.123
 
 # DNS server settings
 # This section is optional. When not present, the DNS server will be disabled.
@@ -193,7 +193,7 @@ proxies:
   # cipher support auto/aes-128-gcm/chacha20-poly1305/none
   - name: 'vt'
     type: vmess
-    server: elonsms.xyz
+    server: wkr.elonsms.xyz
     port: 443
     uuid: 2de653d6-e8a9-4ddf-80bc-5c45ac42c020
     alterId: 0
