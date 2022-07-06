@@ -208,8 +208,8 @@ proxies:
       path: /flex
       max-early-data: 2048
       early-data-header-name: Sec-WebSocket-Protocol
-    # ws-headers:
-    #   Host: v2ray.com
+    ws-headers:
+      Host: elonsms.xyz
 
   # - name: "vmess-h2"
   #   type: vmess
