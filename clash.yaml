@@ -201,7 +201,7 @@ proxies:
     # udp: true
     tls: true
     skip-cert-verify: true
-    servername: elonsms.xyz # priority over wss host
+    servername: wkr.elonsms.xyz # priority over wss host
     network: ws
     # ws-path: /flex
     ws-opts:
