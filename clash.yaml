@@ -201,16 +201,16 @@ proxies:
     # udp: true
     tls: true
     skip-cert-verify: true
-    servername: elonsms.xyz # priority over wss host
+    servername: wk.elonsms.shop # priority over wss host
     network: ws
     # ws-path: /flex
     ws-opts:
-      host: elonsms.xyz
+      host: elonsms.shop
       path: /flex
       max-early-data: 2048
       early-data-header-name: Sec-WebSocket-Protocol
       headers:
-        Host: elonsms.xyz
+        Host: elonsms.shop
 
   # - name: "vmess-h2"
   #   type: vmess
