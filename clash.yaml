@@ -193,7 +193,7 @@ proxies:
   # cipher support auto/aes-128-gcm/chacha20-poly1305/none
   - name: 'vt'
     type: vmess
-    server: wkr.elonsms.xyz
+    server: wk.elonsms.shop
     port: 443
     uuid: 2de653d6-e8a9-4ddf-80bc-5c45ac42c020
     alterId: 0
