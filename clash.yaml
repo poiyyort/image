@@ -449,7 +449,7 @@ rule-providers:
   direct:
     type: http
     behavior: domain
-    url: 'https://raw.fastgit.org/Loyalsoldier/clash-rules/release/direct.txt'
+    url: 'https://raw.staticdn.net/poiyyort/image/main/direct.txt'
     path: ./ruleset/direct.yaml
     interval: 86400
 
