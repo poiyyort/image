@@ -414,7 +414,7 @@ rule-providers:
   reject:
     type: http
     behavior: domain
-    url: 'https://raw.staticdn.net/Loyalsoldier/clash-rules/release/reject.txt'
+    url: 'https://raw.staticdn.net/poiyyort/image/main/reject.txt'
     path: ./ruleset/reject.yaml
     interval: 86400
 
