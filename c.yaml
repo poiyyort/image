@@ -139,6 +139,15 @@ proxies:
     ws-path: /flex
     ws-headers: #这一行后面不要写东西
      Host: elonsms.pp.ua # 填你的主机名
+ 
+  # VMess
+ - name: "hysteria"
+    type: hysteria
+    server: cmsdl.cfd
+    port: 443
+    obfs: I can do this all day
+    up: 10
+    down: 50
 
 # Trojan
 # - name: "trojan"

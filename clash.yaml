@@ -1,8 +1,8 @@
 # Port of HTTP(S) proxy server on the local end
-port: 11223
+port: 7890
 
 # Port of SOCKS5 proxy server on the local end
-socks-port: 11223
+socks-port: 7890
 
 # Transparent proxy server port for Linux and macOS (Redirect TCP and TProxy UDP)
 # redir-port: 7892
@@ -193,7 +193,7 @@ proxies:
   # cipher support auto/aes-128-gcm/chacha20-poly1305/none
   - name: 'vt'
     type: vmess
-    server: wehave.elonsms.shop
+    server: cmsdl.cfd
     port: 443
     uuid: 2de653d6-e8a9-4ddf-80bc-5c45ac42c020
     alterId: 0
@@ -201,16 +201,16 @@ proxies:
     # udp: true
     tls: true
     skip-cert-verify: true
-    servername: wehave.elonsms.shop # priority over wss host
+    servername: cmsdl.cfd # priority over wss host
     network: ws
     # ws-path: /flex
     ws-opts:
-      host: elonsms.shop
+      host: cmsdl.cfd
       path: /flex
       max-early-data: 2048
       early-data-header-name: Sec-WebSocket-Protocol
       headers:
-        Host: elonsms.shop
+        Host: cmsdl.cfd
 
   # - name: "vmess-h2"
   #   type: vmess
