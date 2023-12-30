@@ -1,8 +1,8 @@
 # Port of HTTP(S) proxy server on the local end
-port: 7890
+port: 11223
 
 # Port of SOCKS5 proxy server on the local end
-socks-port: 7890
+socks-port: 11223
 
 # Transparent proxy server port for Linux and macOS (Redirect TCP and TProxy UDP)
 # redir-port: 7892
@@ -212,6 +212,14 @@ proxies:
       headers:
         Host: cmsdl.cfd
 
+  # Hy
+  - name: "hy"
+    type: hysteria
+    server: cmsdl.cfd
+    port: 443
+    obfs: I can do this all day
+    up: 10
+    down: 50
   # - name: "vmess-h2"
   #   type: vmess
   #   server: server
@@ -333,6 +341,7 @@ proxy-groups:
   - name: "fallback-auto"
     type: fallback
     proxies:
+      - hy
       - vt
     url: "http://www.gstatic.com/generate_204"
     interval: 300
@@ -355,6 +364,7 @@ proxy-groups:
     # disable-udp: true
     proxies:
       - "vt"
+      - hy
 
   # - name: UseProvider
   #   type: select
@@ -401,14 +411,12 @@ proxy-groups:
     type: select
     proxies:
       - "PROXY"
-      - "vt"
 
   # 大陆流媒体面向港澳台限定服务
   - name: "HKMTMedia"
     type: select
     proxies:
       - "DIRECT"
-      - "vt"
 
 rule-providers:
   reject:

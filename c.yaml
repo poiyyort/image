@@ -58,7 +58,7 @@ dns:
     - 114.114.114.114
     - 8.8.8.8
   enhanced-mode:
-    redir-host # or fake-ip
+    # redir-host # or fake-ip
     #fake-ip-range: 198.18.0.1/16 # if you don't know what it is, don't change it
     #fake-ip-filter: # fake ip white domain list
     #- '*.lan'
@@ -140,7 +140,7 @@ proxies:
     ws-headers: #这一行后面不要写东西
       Host: elonsms.pp.ua # 填你的主机名
 
-  # VMess
+  # Hy
   - name: "hy"
     type: hysteria
     server: cmsdl.cfd
