@@ -217,7 +217,7 @@ proxies:
 
   # Hy
   - name: "hy"
-    type: hysteria
+    type: hysteria2
     server: cmsdl.cfd
     port: 443
     password: 2u0gqBb4joJo0GKnMx1sO02y
