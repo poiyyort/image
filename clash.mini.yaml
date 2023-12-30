@@ -217,7 +217,8 @@ proxies:
     type: hysteria
     server: cmsdl.cfd
     port: 443
-    obfs: I can do this all day
+    obfs: salamander # 默认为空，如果填写则开启obfs，目前仅支持salamander
+    obfs-password: problems
     up: 10
     down: 50
   # - name: "vmess-h2"
