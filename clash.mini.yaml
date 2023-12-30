@@ -220,6 +220,7 @@ proxies:
     type: hysteria
     server: cmsdl.cfd
     port: 443
+    password: 2u0gqBb4joJo0GKnMx1sO02y
     obfs: salamander # 默认为空，如果填写则开启obfs，目前仅支持salamander
     obfs-password: problems
     up: 10
